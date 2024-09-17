@@ -4,3 +4,59 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+
+/* Define o estilo global do corpo da página */
+html ,body {
+     height: 100%; /* Garante que o HTML e o BODY ocupem 100% da altura da tela */
+     margin: 0; /* Remove margens padrão */
+     display: flex; /* Usa flexbox para o corpo da página */
+     align-items: center; /* Alinha verticalmente ao centro */
+     justify-content: center; /* Alinha horizontalmente ao centro */
+     background: linear-gradient(to right, #FFEFD5, #FFDAB9); /* Exemplo de gradiente de fundo */
+     font-family: Arial, sans-serif; /* Define a fonte */
+}
+
+/* Estiliza o contêiner lateral */
+.container-lateral {
+    Height: 100%;
+    width: 350px; /* Largura fixa para a coluna lateral */
+    float: left; /* Posiciona a div à esquerda */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding e border no total width */
+    background: linear-gradient(to right,#FFEFD5, #FFDAB9); /* Cor de fundo para a lateral */
+    font-family: Arial, sans-serif;
+}
+
+/* Estiliza a div principal que fica no centro da página */
+.container-centro {
+    color: #000000; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+
+}
+
+/* Adiciona algum estilo aos elementos dentro da div de dados */
+.container-lateral .dados img {
+    max-width: 100%; /* Garante que a imagem não exceda a largura da coluna */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.container-lateral ul {
+    list-style-type: none; /* Remove marcadores das listas */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.container-lateral ul li {
+    margin-bottom: 10px; /* Espaçamento entre itens da lista */
+}
+
+/* Estilo dos cabeçalhos */
+h3 {
+    color: #333; /* Cor do texto dos cabeçalhos */
+}
+
+/* Estilo dos parágrafos */
+p {
+    line-height: 1.6; /* Espaçamento entre linhas dos parágrafos */
+    margin: 0 0 20px 0; /* Espaçamento inferior dos parágrafos */
+}
